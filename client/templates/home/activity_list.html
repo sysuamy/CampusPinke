@@ -1,0 +1,12 @@
+<template name="activityList">
+    {{#each activities}}
+        {{> activityItem}}
+    {{/each}}
+    {{#if nextPath}}
+        <a class="load-more" href="{{nextPath}}">查看更多</a>
+    {{else}}
+        {{#unless ready}}
+            {{> spinner}}
+        {{/unless}}
+    {{/if}}
+</template>

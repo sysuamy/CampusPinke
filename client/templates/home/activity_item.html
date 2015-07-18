@@ -1,0 +1,15 @@
+<template name="activityItem">
+    <div class="panel panel-primary" style="width:23%; float:left; margin-left: 1%; margin-right: 1%;">
+        <div class="panel-heading">{{title}}</div>
+        <div class="panel-body">
+            <div>类型: {{title}}</div>
+            <div>开始时间: {{time}}</div>
+            <div>活动地点: {{location}}</div>
+            <div>目前人数: {{current_number}}/{{max_number}}</div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#{{_id}}">
+                查看详情
+            </button>
+        </div>
+        {{>activityDetail}}
+    </div>
+</template>

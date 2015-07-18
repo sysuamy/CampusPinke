@@ -1,0 +1,30 @@
+<template name="activityDetail">
+    <div class="modal fade" id="{{_id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">{{title}}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="text-left">
+                        <h4>发起人 : <strong>{{sponsorNickName}}</strong></h4>
+                        <h4>联系方式 : <strong>{{contact_way}}</strong></h4>
+                        <h4>活动标题 : <strong>{{title}}</strong></h4>
+                        <h4>活动类型 : <strong>{{type}}</strong></h4>
+                        <h4>开始时间 : <strong>{{time}}</strong></h4>
+                        <h4>活动地点 : <strong>{{location}}</strong></h4>
+                        <h4>邀请人数 : <strong>{{max_number}}</strong></h4>
+                        <h4>目前人数 : <strong>{{current_number}}</strong></h4>
+                        <h4>活动状态 : <strong>{{state}}</strong></h4>
+                        <h4>活动内容 : <strong>{{detail}}</strong></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">{{buttonValue}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
