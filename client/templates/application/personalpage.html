@@ -1,0 +1,110 @@
+<!--
+
+<template name="personalpage">
+  {{>sponsoredAct}}
+</template>
+
+<template name="personalHeader">
+    <ul id="nav-mobile" class="side-nav fixed" style="left: 0px;top: auto;">
+        <li class="bold active">
+            <a href="/profile/sponsoredAct">我发布的活动</a>
+        </li>
+        <li class="bold active">
+            <a href="/profile/participatedAct">我参与的活动</a>
+        </li>
+        <li class="bold active">
+            <a href="/profile/changeProfile">修改资料</a>
+        </li>
+        <li class="bold active">
+            <a href="/profile/changePassword">修改密码</a>
+        </li>
+    </ul>
+</template>
+
+<template name="sponsoredAct">
+  {{>personalHeader}}
+    <main style="padding-left:240px;">
+        <div class="container">
+            <ul class="collapsible" data-collapsible="accordion">
+                {{#each activities}}
+                <li>
+                    <div class="collapsible-header">{{act_title}} {{act_sponsor}} {{act_time}}</div>
+                    <div class="collapsible-body"><p>{{act_detail}}</p></div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </main>
+</template>
+<template name="participatedAct">
+  {{>personalHeader}}
+    <main style="padding-left:240px;">
+        <div class="container">
+            <ul class="collapsible" data-collapsible="accordion">
+                {{#each activities}}
+                    <li>
+                        <div class="collapsible-header">{{act_title}} {{act_sponsor}} {{act_time}}</div>
+                        <div class="collapsible-body"><p>{{act_detail}}</p></div>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </main>
+</template>
+<template name="changeProfile">
+  {{>personalHeader}}
+    <main style="padding-left:240px;">
+        <div class="container">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12 l8">
+                        <input id="cnickname" type="text" class="validate" style="margin-bottom:0px; color:black" length="15">
+                        <label for="cnickname">NickName</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 l8">
+                        <div>Gender</div>
+                        <input name="cgender" type="radio" id="cboy" />
+                        <label for="boy">Boy</label>
+
+                        <input name="cgender" type="radio" id="cgirl" />
+                        <label for="cgirl">Girl</label>
+
+                        <input name="cgender" type="radio" id="cgay"  />
+                        <label for="cgay">Gay</label>
+
+                        <input name="cgender" type="radio" id="clesbian"  />
+                        <label for="clesbian">Lesbian</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 l8">
+                        <input id="cschool" type="text" class="validate" style="margin-bottom:0px; color:black" length="20">
+                        <label for="cschool">School</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 l8">
+                        <input id="cemail" type="email" class="validate" style="margin-bottom:0px; color:black" length="20">
+                        <label for="cemail">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 l8">
+                        <input id="cphonenumber" type="text" class="validate" style="margin-bottom:0px; color:black" length="15">
+                        <label for="cphonenumber">PhoneNumber</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="modal-action btn waves-effect waves-light center col s5">修改</button>
+                </div>
+                <div class="row" id="ctotalErr">
+                </div>
+            </form>
+        </div>
+    </main>
+</template>
+
+-->
+

@@ -1,0 +1,70 @@
+<!--
+
+<template name="sponsorActivity">
+    <div class="row container">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="act_title" type="text" length="10" required="required">
+                    <label for="act_title">活动标题</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <div>活动类型</div>
+                    <input name="act_type" type="radio" id="dinner" />
+                    <label for="dinner">吃饭</label>
+                    <input name="act_type" type="radio" id="sports" />
+                    <label for="sports">运动</label>
+                    <input name="act_type" type="radio" id="picnic" />
+                    <label for="picnic">出游</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="act_time" type="date" class="datepicker" required="required">
+                    <label for="act_time">开始时间</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="act_place" type="text" length="20" required="required">
+                    <label for="act_place">活动地点</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="act_personnumber" type="number" length="3" required="required">
+                    <label for="act_personnumber">活动人数</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="act_contactway" type="text" length="15" required="required">
+                    <label for="act_contactway">联系方式</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <textarea id="act_detail" class="materialize-textarea" length="150"></textarea>
+                    <label for="act_detail">活动详情</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="act_submit" type="submit" class="btn waves-effect waves-grey" value="发布">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+        $("input[type=text]").val("");
+        $('input[type=text], textarea').characterCounter();
+    </script>
+</template>
+
+-->
